@@ -35,3 +35,21 @@ com_crashlytics_export_strings.xml
 .Trashes
 ehthumbs.db
 Thumbs.db
+
+# remove sensitive keys from repo
+/app/src/main/res/values/keys.xml
+
+/app/src/androidTest
+/app/src/debug
+/app/src/release
+
+
+# Android Studio
+/*/local.properties
+/*/out
+/*/*/build
+/*/*/production
+*.iws
+*.ipr
+*~
+*.swp

@@ -24,9 +24,9 @@ public class BranchingOutApplication extends Application {
         super.onCreate();
 
         Parse.initialize(new Parse.Configuration.Builder(this)
-                        .applicationId(APP_KEY)
-                        .clientKey(CLIENT_KEY)
-                        .server("localhost:1337/parse/") // The trailing slash is important.
+                        .applicationId(getString(R.string.APP_KEY))
+                        .clientKey(getString(R.string.CLIENT_KEY))
+                        .server(getString(R.string.SERVER_KEY)) // The trailing slash is important.
                         .build()
         );
 
