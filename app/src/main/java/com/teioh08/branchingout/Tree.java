@@ -24,9 +24,9 @@ public class Tree implements Parcelable{
         longitude = log;
         wiki = link;
         image =img;
-        image = "http://farm4.static.flickr.com/3154/2858250032_13783e7640_o.jpg";
     }
 
+    //test constructor
     public Tree(String cName){
         common = cName;
         image = "http://farm4.static.flickr.com/3154/2858250032_13783e7640_o.jpg";

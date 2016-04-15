@@ -124,8 +124,9 @@ public class FMapPresenterImpl implements FMapPresenter, OnMapReadyCallback {
     @Override
     public void onLocationPermission() {
         mMapPermission = true;
-        if (mGoogleMap != null)
+        if (mGoogleMap != null) {
             mGoogleMap.setMyLocationEnabled(true);
+        }
     }
 
 

@@ -19,6 +19,7 @@ public class AMainPresenterImpl implements AMainPresenter {
     private final CharSequence mTabTitles[] = {"Info", "Tree", "Map", "Gallery"};
     private AMainMap mAMainMap;
     private ViewPagerAdapter mViewPagerAdapter;
+    private Tree mTree;
 
     public AMainPresenterImpl(AMainMap map) {
         mAMainMap = map;
@@ -62,7 +63,15 @@ public class AMainPresenterImpl implements AMainPresenter {
 
     @Override
     public void setPathToMarker(Tree tree) {
-        ((FMapFragment) mViewPagerAdapter.getRegisteredFragment(2)).setPathToMarker(tree);
+        mTree = tree;
+//        ((FMapFragment) mViewPagerAdapter.getRegisteredFragment(2)).setPathToMarker(tree);
+    }
+
+    @Override
+    public void setPathToMarker() {
+        if(mTree != null) {
+            ((FMapFragment) mViewPagerAdapter.getRegisteredFragment(2)).setPathToMarker(mTree);
+        }
     }
 
     @Override

@@ -137,6 +137,7 @@ public class AMainActivity extends AppCompatActivity implements AMainMap {
     public void goToMap() {
         onBackPressed();
         mViewPager.setCurrentItem(2);
+        mAMainPresenter.setPathToMarker();
     }
 
     @Override

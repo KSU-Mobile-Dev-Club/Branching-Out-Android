@@ -1,5 +1,8 @@
 package com.teioh08.branchingout.UI.Main.View.Fragments;
 
+import android.content.res.Resources;
+import android.graphics.Bitmap;
+import android.graphics.BitmapFactory;
 import android.os.Bundle;
 import android.support.annotation.Nullable;
 import android.support.v4.app.Fragment;
@@ -30,7 +33,6 @@ public class FIntroFragment extends Fragment implements FIntroMap {
         ButterKnife.bind(this, v);
 
         mFIntroPresenter = new FIntroPresenterImpl(this);
-        Glide.with(this).load("http://farm4.static.flickr.com/3154/2858250032_13783e7640_o.jpg").into(mInfoImage);
         return v;
     }
 
@@ -59,6 +61,5 @@ public class FIntroFragment extends Fragment implements FIntroMap {
     public void onPause() {
         super.onPause();
     }
-
 
 }

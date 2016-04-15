@@ -7,6 +7,8 @@ import com.teioh08.branchingout.Tree;
 public interface AMainPresenter extends LifeCycleMap {
     void setPathToMarker(Tree tree);
 
+    void setPathToMarker();
+
     void onLocationPermission();
 
 }

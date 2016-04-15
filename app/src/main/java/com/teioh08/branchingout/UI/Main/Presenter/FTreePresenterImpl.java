@@ -61,7 +61,8 @@ public class FTreePresenterImpl implements FTreePresenter {
                     fake = new ArrayList<>();
                     if (objects != null) {
                         for (ParseObject o : objects) {
-                            fake.add(new Tree(o.getString("common"), o.getString("scientific"), o.getObjectId(), o.getParseGeoPoint("cord").getLatitude(), o.getParseGeoPoint("cord").getLatitude(), o.getInt("treeId"), o.getString("wiki"), "o.getString(image)"));
+                            fake.add(new Tree(o.getString("common"), o.getString("scientific"), o.getObjectId(), o.getParseGeoPoint("cord").getLatitude(), o.getParseGeoPoint("cord").getLatitude(), o.getInt("treeId"), o.getString("wiki"), o.getString("photo")));
+//                            fake.add(new Tree(o.getString("common"), o.getString("scientific"), o.getObjectId(), o.getInt("treeId"), o.getString("wiki"), "o.getString(image)"));
                         }
                     }
                     mAdapter.addData(fake);
